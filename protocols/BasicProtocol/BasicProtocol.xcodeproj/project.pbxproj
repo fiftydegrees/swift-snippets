@@ -11,25 +11,9 @@
 		3CAC25C9193F9050001D37AB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CAC25C8193F9050001D37AB /* ViewController.swift */; };
 		3CAC25CC193F9050001D37AB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3CAC25CA193F9050001D37AB /* Main.storyboard */; };
 		3CAC25CE193F9050001D37AB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3CAC25CD193F9050001D37AB /* Images.xcassets */; };
-		3CAC25DA193F9050001D37AB /* BasicProtocolTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CAC25D9193F9050001D37AB /* BasicProtocolTests.swift */; };
+		3CAC25E9193F92CC001D37AB /* HLRequestDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CAC25E8193F92CC001D37AB /* HLRequestDelegate.swift */; };
+		3CAC25EB193F92E3001D37AB /* HLRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CAC25EA193F92E3001D37AB /* HLRequest.swift */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		3CAC25D4193F9050001D37AB /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 3CAC25B9193F9050001D37AB /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 3CAC25C0193F9050001D37AB;
-			remoteInfo = BasicProtocol;
-		};
-		3CAC25E3193F9054001D37AB /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 3CAC25B9193F9050001D37AB /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 3CAC25C0193F9050001D37AB;
-			remoteInfo = BasicProtocol;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		3CAC25C1193F9050001D37AB /* BasicProtocol.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BasicProtocol.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -38,20 +22,12 @@
 		3CAC25C8193F9050001D37AB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		3CAC25CB193F9050001D37AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3CAC25CD193F9050001D37AB /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		3CAC25D3193F9050001D37AB /* BasicProtocolTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BasicProtocolTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		3CAC25D8193F9050001D37AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3CAC25D9193F9050001D37AB /* BasicProtocolTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicProtocolTests.swift; sourceTree = "<group>"; };
+		3CAC25E8193F92CC001D37AB /* HLRequestDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HLRequestDelegate.swift; sourceTree = "<group>"; };
+		3CAC25EA193F92E3001D37AB /* HLRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HLRequest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		3CAC25BE193F9050001D37AB /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		3CAC25D0193F9050001D37AB /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -65,7 +41,6 @@
 			isa = PBXGroup;
 			children = (
 				3CAC25C3193F9050001D37AB /* BasicProtocol */,
-				3CAC25D6193F9050001D37AB /* BasicProtocolTests */,
 				3CAC25C2193F9050001D37AB /* Products */,
 			);
 			sourceTree = "<group>";
@@ -74,7 +49,6 @@
 			isa = PBXGroup;
 			children = (
 				3CAC25C1193F9050001D37AB /* BasicProtocol.app */,
-				3CAC25D3193F9050001D37AB /* BasicProtocolTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -84,6 +58,7 @@
 			children = (
 				3CAC25C6193F9050001D37AB /* AppDelegate.swift */,
 				3CAC25C8193F9050001D37AB /* ViewController.swift */,
+				3CAC25E7193F92C0001D37AB /* HLRequest */,
 				3CAC25CA193F9050001D37AB /* Main.storyboard */,
 				3CAC25CD193F9050001D37AB /* Images.xcassets */,
 				3CAC25C4193F9050001D37AB /* Supporting Files */,
@@ -99,21 +74,13 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		3CAC25D6193F9050001D37AB /* BasicProtocolTests */ = {
+		3CAC25E7193F92C0001D37AB /* HLRequest */ = {
 			isa = PBXGroup;
 			children = (
-				3CAC25D9193F9050001D37AB /* BasicProtocolTests.swift */,
-				3CAC25D7193F9050001D37AB /* Supporting Files */,
+				3CAC25E8193F92CC001D37AB /* HLRequestDelegate.swift */,
+				3CAC25EA193F92E3001D37AB /* HLRequest.swift */,
 			);
-			path = BasicProtocolTests;
-			sourceTree = "<group>";
-		};
-		3CAC25D7193F9050001D37AB /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				3CAC25D8193F9050001D37AB /* Info.plist */,
-			);
-			name = "Supporting Files";
+			name = HLRequest;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,25 +103,6 @@
 			productReference = 3CAC25C1193F9050001D37AB /* BasicProtocol.app */;
 			productType = "com.apple.product-type.application";
 		};
-		3CAC25D2193F9050001D37AB /* BasicProtocolTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 3CAC25E0193F9050001D37AB /* Build configuration list for PBXNativeTarget "BasicProtocolTests" */;
-			buildPhases = (
-				3CAC25CF193F9050001D37AB /* Sources */,
-				3CAC25D0193F9050001D37AB /* Frameworks */,
-				3CAC25D1193F9050001D37AB /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				3CAC25D5193F9050001D37AB /* PBXTargetDependency */,
-				3CAC25E4193F9054001D37AB /* PBXTargetDependency */,
-			);
-			name = BasicProtocolTests;
-			productName = BasicProtocolTests;
-			productReference = 3CAC25D3193F9050001D37AB /* BasicProtocolTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -166,10 +114,6 @@
 				TargetAttributes = {
 					3CAC25C0193F9050001D37AB = {
 						CreatedOnToolsVersion = 6.0;
-					};
-					3CAC25D2193F9050001D37AB = {
-						CreatedOnToolsVersion = 6.0;
-						TestTargetID = 3CAC25C0193F9050001D37AB;
 					};
 				};
 			};
@@ -187,7 +131,6 @@
 			projectRoot = "";
 			targets = (
 				3CAC25C0193F9050001D37AB /* BasicProtocol */,
-				3CAC25D2193F9050001D37AB /* BasicProtocolTests */,
 			);
 		};
 /* End PBXProject section */
@@ -202,13 +145,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3CAC25D1193F9050001D37AB /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -216,33 +152,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3CAC25E9193F92CC001D37AB /* HLRequestDelegate.swift in Sources */,
 				3CAC25C9193F9050001D37AB /* ViewController.swift in Sources */,
 				3CAC25C7193F9050001D37AB /* AppDelegate.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		3CAC25CF193F9050001D37AB /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				3CAC25DA193F9050001D37AB /* BasicProtocolTests.swift in Sources */,
+				3CAC25EB193F92E3001D37AB /* HLRequest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		3CAC25D5193F9050001D37AB /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 3CAC25C0193F9050001D37AB /* BasicProtocol */;
-			targetProxy = 3CAC25D4193F9050001D37AB /* PBXContainerItemProxy */;
-		};
-		3CAC25E4193F9054001D37AB /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 3CAC25C0193F9050001D37AB /* BasicProtocol */;
-			targetProxy = 3CAC25E3193F9054001D37AB /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		3CAC25CA193F9050001D37AB /* Main.storyboard */ = {
@@ -355,42 +272,6 @@
 			};
 			name = Release;
 		};
-		3CAC25E1193F9050001D37AB /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/BasicProtocol.app/BasicProtocol";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = BasicProtocolTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				METAL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-			};
-			name = Debug;
-		};
-		3CAC25E2193F9050001D37AB /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/BasicProtocol.app/BasicProtocol";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = BasicProtocolTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				METAL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -408,14 +289,6 @@
 			buildConfigurations = (
 				3CAC25DE193F9050001D37AB /* Debug */,
 				3CAC25DF193F9050001D37AB /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-		};
-		3CAC25E0193F9050001D37AB /* Build configuration list for PBXNativeTarget "BasicProtocolTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				3CAC25E1193F9050001D37AB /* Debug */,
-				3CAC25E2193F9050001D37AB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
