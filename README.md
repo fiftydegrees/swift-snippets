@@ -2,9 +2,9 @@
 
 Many basics to get off a good start with Swift.
 
-## Summary
+# Summary
 
-# protocols
+## protocols
 
 How to create a protocol and use delegation - [complete tutorial here](http://nscurious.com/?p=44)
 
